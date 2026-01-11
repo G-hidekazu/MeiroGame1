@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meiro Ball</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hud">
+        <div class="title">Maze Tilt Ball</div>
+        <div class="status" id="status">傾けてボールを動かそう</div>
+      </header>
+      <canvas id="game" aria-label="迷路ゲーム"></canvas>
+      <div class="controls">
+        <button id="permission" class="primary" type="button">センサーを有効化</button>
+        <button id="restart" type="button">リスタート</button>
+      </div>
+      <p class="note">
+        Androidはそのまま傾けて操作できます。PCでは矢印キーでも動かせます。
+      </p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
